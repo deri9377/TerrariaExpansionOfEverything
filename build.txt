@@ -1,0 +1,3 @@
+displayName = Terraria Super Cool Awesome Drippy Expansion of Everything
+author = DevinHenry
+version = 0.1

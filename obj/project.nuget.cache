@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y2A0aNZZ6SCOKUvAMR2+gsbYUnchw0wtfXCfvp9FXijZSHxoNmUNeR6LwzMcXUet8l0ezQuSVyH3EWokpipNrQ==",
+  "dgSpecHash": "T0eEgy/Hz+SFTOcWv0cJbnjsjkUlJT9fDqJAYOoLrWG/ubKpKaTGm3UDiabvmaTs+nfF3V7b3qXSod1C6xzM4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj",
+  "projectFilePath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devin\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],

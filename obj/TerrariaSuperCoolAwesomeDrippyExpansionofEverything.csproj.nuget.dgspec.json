@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj": {}
+    "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj": {}
   },
   "projects": {
-    "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj": {
+    "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj",
+        "projectUniqueName": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj",
         "projectName": "TerrariaSuperCoolAwesomeDrippyExpansionofEverything",
-        "projectPath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj",
+        "projectPath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything.csproj",
         "packagesPath": "C:\\Users\\devin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaSuperCoolAwesomeDrippyExpansionofEverything\\obj\\",
+        "outputPath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\devin\\AppData\\Roaming\\NuGet\\NuGet.Config"

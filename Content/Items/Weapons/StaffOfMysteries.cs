@@ -49,7 +49,7 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
         public override void OnConsumeMana(Player player, int manaConsumed)
         {
             var randValue = new Random();
-            var projectilesList = new List<int>{ModContent.ProjectileType<BigBoulder>()};
+            var projectilesList = new List<int>{ModContent.ProjectileType<BigBoulder>(), ModContent.ProjectileType<SpectralBolt>()};
             int index = randValue.Next(projectilesList.Count);
             int newType = projectilesList[index];
             Item.shoot = newType;

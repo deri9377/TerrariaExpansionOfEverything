@@ -36,17 +36,18 @@ namespace TerrariaExpansionOfEverything.UI
         public override void OnInitialize()
         {
             area = new UIElement();
-            area.Left.Set(-1150, 1f); // Place the resource bar to the left of the hearts.
-            area.Top.Set(520, 0f); // Placing it just a bit below the top of the screen.
+            Vector2 position = Main.LocalPlayer.position - Main.screenPosition;
+            area.Left.Set(-1000, 1f); // Place the resource bar to the left of the hearts.
+            area.Top.Set(0, 0f); // Placing     it just a bit below the top of the screen.
             area.Width.Set(182, 0f); // We will be placing the following 2 UIElements within this 182x60 area.
             area.Height.Set(30, 0f);
 
             barFrame = new UIImage(ModContent.Request<Texture2D>("TerrariaExpansionOfEverything/UI/ExampleResourceFrame")); // Frame of our resource bar
-            barFrame.Left.Set(22, 0f);
+            barFrame.Left.Set(0, 0f);
             barFrame.Top.Set(0, 0f);
             barFrame.Width.Set(138, 0f);
             barFrame.Height.Set(34, 0f);
-
+            
             textUI = new UIText("0/0", 0.8f); // text to show stat
             textUI.Width.Set(138, 0f);
             textUI.Height.Set(34, 0f);
@@ -98,7 +99,9 @@ namespace TerrariaExpansionOfEverything.UI
             {
                 RemoveAllChildren();
             }
-            textUI.SetText($"{Main.LocalPlayer.wingTime} / {Main.LocalPlayer.wingTimeMax}");
+            area.Left.Set(-Main.screenWidth + 182, 1f);
+            area.Top.Set(-Main.screenHeight + 150, 1f);
+            textUI.SetText($"{Main.LocalPlayer.wingTime}, {Main.LocalPlayer.wingTimeMax}");
             base.Update(gameTime);
         }
     

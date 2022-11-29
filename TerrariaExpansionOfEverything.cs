@@ -3,12 +3,15 @@ using Terraria;
 using Terraria.UI;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using SteelSeries.GameSense.DeviceZone;
+using Terraria.Chat;
+using Terraria.Localization;
 using TerrariaExpansionOfEverything.UI;
 
 
 namespace TerrariaExpansionOfEverything
 {
-	public class SimpleModPlayer : ModPlayer
+    public class SimpleModPlayer : ModPlayer
 	{
         
 	    public override void OnEnterWorld(Player player) {
@@ -27,13 +30,20 @@ namespace TerrariaExpansionOfEverything
     {
         private UserInterface NPCfinderInterface;
         internal NPCFinder npcFinder;
+        
         public override void Load()
         {
-            if (!Main.dedServ) {
-                npcFinder = new();
+            if (!Main.dedServ)
+            {
+                npcFinder = new NPCFinder(new NPC());
                 NPCfinderInterface = new();
                 NPCfinderInterface.SetState(npcFinder);
             }
+        }
+
+        public void setNPC(NPC npc)
+        {
+            npcFinder.setNPC(npc);
         }
         
         public override void UpdateUI(GameTime gameTime)
@@ -48,6 +58,15 @@ namespace TerrariaExpansionOfEverything
                     "NPCFinder: Find NPC",
                     delegate {
                         npcFinder.Draw(Main.spriteBatch);
+                        float distance = Utils.Distance(Main.LocalPlayer.position, npcFinder.getNPC().position);
+                        NPC npc = npcFinder.getNPC();
+                        if (distance > 50)
+                        {
+                            ModContent.GetInstance<NPCFinderMod>().Unload();
+                            Utils.DrawBorderString(Main.spriteBatch,
+                                $"{npcFinder.getNPC().position - Main.screenPosition}, {distance}",
+                                npcFinder.getNPC().position - Main.screenPosition, Color.WhiteSmoke);
+                        }
                         return true;
                     },
                     InterfaceScaleType.UI)

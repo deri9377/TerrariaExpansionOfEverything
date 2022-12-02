@@ -78,7 +78,7 @@ namespace TerrariaExpansionOfEverything.UI
             textUI.SetText($"{distance}");
             area.Left.Set( npc.position.X - Main.screenPosition.X, 0f); // Place the resource bar to the left of the hearts.
             area.Top.Set(npc.position.Y - Main.screenPosition.Y, 0f);
-            ChatHelper.BroadcastChatMessage(NetworkText.FromKey($"{Main.MouseWorld - Main.screenPosition},image {area.Left.GetValue(0)}, {area.Top.GetValue(0)}"), Color.Orange);
+            //ChatHelper.BroadcastChatMessage(NetworkText.FromKey($"{Main.MouseWorld - Main.screenPosition},image {area.Left.GetValue(0)}, {area.Top.GetValue(0)}"), Color.Orange);
             if (distance < 50)
             {
                 RemoveAllChildren();

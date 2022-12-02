@@ -47,7 +47,6 @@ public class LoadoutLoader : ModCommand
                 Main.LocalPlayer.armor[slot] = new Item(id);
                 line = sr.ReadLine();
             }
-
         }
         catch (Exception e)
         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using On.Terraria.GameContent.UI.Elements;
 using Terraria;
 using Terraria.Chat;
 using Terraria.GameContent.RGB;
@@ -11,6 +12,7 @@ namespace TerrariaExpansionOfEverything.Content.Items.Tools;
 
 public class WeatherDial : ModItem
 {
+    private String[] events = new[] { "Rain", "Sandstorm", "Thunderstorm", "Wind", "Windy Day" };
 
     public override void SetStaticDefaults()
     {
@@ -21,7 +23,17 @@ public class WeatherDial : ModItem
 
     public override bool? UseItem(Player player)
     {
-        String s = "" + Main.weatherCounter;
+        String s = "";
+        if (Main.raining)
+        {
+            Main.raining = false;
+            s += "Stopped Raining";
+        }
+        else
+        {
+            Main.raining = true;
+            s += "Started Raining";
+        }
         ChatHelper.BroadcastChatMessage(NetworkText.FromKey(s), Color.Orange);
         return true;
     }

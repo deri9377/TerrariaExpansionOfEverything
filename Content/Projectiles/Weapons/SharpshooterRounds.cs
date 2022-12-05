@@ -32,7 +32,7 @@ namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
         public override void AI()
         {
             Projectile.aiStyle = 0;
-            Lighting.AddLight(Projectiles.position, 0.3f, 0.3f, 0.75f);
+            Lighting.AddLight(Projectile.position, 0.3f, 0.3f, 0.75f);
             Lighting.Brightness(1,1);
         }
     }

@@ -7,7 +7,7 @@ namespace TerrariaExpansionOfEverything.Commands
 {
 	public class ExampleSummonCommand : ModCommand
 	{
-		// CommandType.World means that command can be used in Chat in SP and MP, but executes on the Server in MP
+		// CommandType.World means that command can be used StirnMain.in Chat in SP and MP, but executes on the Server in MP
 		public override CommandType Type
 			=> CommandType.World;
 

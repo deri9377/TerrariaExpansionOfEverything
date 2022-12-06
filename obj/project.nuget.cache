@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "T0eEgy/Hz+SFTOcWv0cJbnjsjkUlJT9fDqJAYOoLrWG/ubKpKaTGm3UDiabvmaTs+nfF3V7b3qXSod1C6xzM4g==",
+  "dgSpecHash": "D2dgYuoPEJfCYIGdsBj1dtxjR7HyQi/td9Gv74FHjSCPgIIMd4gi1crJ41JBOTXokCoZmzmyRzfnD8od6ZGH+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
+  "projectFilePath": "C:\\Users\\Hank\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\devin\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+    "C:\\Users\\Hank\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
   ],
   "logs": []
 }

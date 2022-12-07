@@ -3,6 +3,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using TerrariaExpansionOfEverything.Content.Mounts;
 using TerrariaExpansionOfEverything.Content.Pets.Projectile;
 
 namespace TerrariaExpansionOfEverything.Content.Pets.Item;

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hank\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj": {}
+    "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hank\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj": {
+    "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hank\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
+        "projectUniqueName": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
         "projectName": "TerrariaExpansionOfEverything",
-        "projectPath": "C:\\Users\\Hank\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
-        "packagesPath": "C:\\Users\\Hank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hank\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\obj\\",
+        "projectPath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\TerrariaExpansionOfEverything.csproj",
+        "packagesPath": "C:\\Users\\devin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devin\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\TerrariaExpansionOfEverything\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hank\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\devin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

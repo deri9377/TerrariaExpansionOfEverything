@@ -99,8 +99,10 @@ namespace TerrariaExpansionOfEverything.UI
             {
                 RemoveAllChildren();
             }
-            area.Left.Set(-Main.screenWidth + 182, 1f);
-            area.Top.Set(-Main.screenHeight + 150, 1f);
+
+            Vector2 pos = Main.screenPosition - Main.LocalPlayer.position;
+            area.Left.Set(- pos.X - 100, 0.1f);
+            area.Top.Set(- pos.Y, 0.1f);
             textUI.SetText($"{Main.LocalPlayer.wingTime}, {Main.LocalPlayer.wingTimeMax}");
             base.Update(gameTime);
         }

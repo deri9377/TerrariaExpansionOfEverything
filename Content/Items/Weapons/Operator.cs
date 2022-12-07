@@ -53,19 +53,13 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             position += newPos;
             // velocity = new Vector2(0, 100);
             //Sound 149
-            if(type == ModContent.ProjectileType<SharpshooterRounds>())
-            {
-                velocity = velocity * 15f;
-            }
-
             float recoil = -1f; // -1f
-            player.velocity = velocity * recoil;
+            player.velocity = 1/4f * velocity * recoil;
             int dustSize = 200;
             for (var i = 0; i < 120; i++)
             {
                 Dust.NewDust(position + new Vector2(0f, -200f), dustSize, dustSize, 31, 0.25f, 0.25f ,1,  Color.Gray);
             }
-            Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<SharpshooterRounds>(), damage, knockback);
             return true;
         }
         

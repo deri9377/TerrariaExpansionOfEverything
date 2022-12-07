@@ -7,11 +7,10 @@ using Microsoft.Xna.Framework;
 
 namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
  {
-    internal class SharpshooterRounds : ModProjectile
+    internal class ScorchRounds : ModProjectile
     {
         public override void SetDefaults()
         {
-            
             Projectile.width = 4;
             Projectile.height = 20;
 
@@ -30,6 +29,11 @@ namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
             // Collision.HitTiles(Projectile.position + Projectile.velocity, Projectile.velocity, Projectile.width, Projectile.height);
 
         }
+        public override void ModifyHitNPC( NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection )
+        {
+            target.AddBuff(24, 240 );
+        }
+
         public override void AI()
         {
             Projectile.aiStyle = 0;

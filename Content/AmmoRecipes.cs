@@ -20,6 +20,9 @@ public class AmmoRecipes
             Recipe newRecipe = Recipe.Create(ModContent.ItemType<SharpshooterBullet>(), 200);
             newRecipe.AddIngredient(ItemID.DirtBlock, 1);
             newRecipe.Register();
+            Recipe newRecipe2 = Recipe.Create(ModContent.ItemType<ScorchBullet>(), 200);
+            newRecipe2.AddIngredient(ItemID.DirtBlock, 1);
+            newRecipe2.Register();
         }
     }
 }

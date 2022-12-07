@@ -46,7 +46,7 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             // Item.shoot = ProjectileID.FireArrow;
 
             // Tool Zon
-            Item.shoot = ModContent.ProjectileType<SharpshooterRounds>();
+            Item.shoot = AmmoID.Bullet;
             Item.shootSpeed = 10f;
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
@@ -54,12 +54,6 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             Vector2 newPos = new Vector2(velocity.X * 1.2f, velocity.Y * 1.2f);
             position += newPos;
             // velocity = new Vector2(0, 100);
-            
-            if(type == ModContent.ProjectileType<SharpshooterRounds>())
-            {
-                velocity = velocity * 4;
-            }
-            Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<SharpshooterRounds>(), damage, knockback);
             return true;
         }
         public override void AddRecipes()

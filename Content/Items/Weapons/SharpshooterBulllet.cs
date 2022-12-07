@@ -34,9 +34,10 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             Item.knockBack = 50f;
             Item.ammo = AmmoID.Bullet;
             Item.rare = ItemRarityID.Master;
-
+    
             // Tool Zone
             Item.shoot = ModContent.ProjectileType<SharpshooterRounds>();
+            Item.shootSpeed = 25f;
         }
         public override Vector2? HoldoutOffset()
         {

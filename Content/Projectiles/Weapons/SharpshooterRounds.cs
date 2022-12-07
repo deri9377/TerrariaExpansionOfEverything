@@ -27,7 +27,7 @@ namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
             Projectile.scale = 0.75f;
             Projectile.extraUpdates = 1;
             // Collision.HitTiles(Projectile.position + Projectile.velocity, Projectile.velocity, Projectile.width, Projectile.height);
-            
+
         }
         public override void AI()
         {

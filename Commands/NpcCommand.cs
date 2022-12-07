@@ -13,7 +13,7 @@ namespace TerrariaExpansionOfEverything.Commands;
 
 public class NpcCommand : ModCommand
 {
-
+    internal listener npcObserver = new listener();
     public override CommandType Type 
         => CommandType.World;
     
@@ -38,8 +38,8 @@ public class NpcCommand : ModCommand
             throw new UsageException(args[0] + " is not a correct integer value.");
         }
 
-        NPC npc = null; 
-        NPC[] list = Main.npc;
+        NPC npc = null;
+        NPC[] list = npcObserver.GetAllNPCLocations(); //Getting published npc locations from observer
         Vector2 position = new Vector2();
         for (int i = 0; i < list.Length; i++)
         {

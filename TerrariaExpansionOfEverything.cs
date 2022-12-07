@@ -30,6 +30,7 @@ namespace TerrariaExpansionOfEverything
     {
         private UserInterface NPCfinderInterface;
         internal NPCFinder npcFinder;
+        internal listener observer;
         
         public override void Load()
         {
@@ -38,6 +39,7 @@ namespace TerrariaExpansionOfEverything
                 npcFinder = new NPCFinder(new NPC());
                 NPCfinderInterface = new();
                 NPCfinderInterface.SetState(npcFinder);
+                
             }
         }
 

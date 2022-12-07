@@ -14,7 +14,7 @@ namespace TerrariaExpansionOfEverything.Commands;
 
 public class LoadoutSaver : ModCommand
 {
-
+    public LoadoutLogger logger = new LoadoutLogger();
     public override CommandType Type 
         => CommandType.World;
     
@@ -34,28 +34,9 @@ public class LoadoutSaver : ModCommand
         {
             throw new UsageException("At least one argument was expected.");
         }
-        
-        String items = "";
-        
+
         //equipment is in armor slots 3-7
-        Item[] key = Main.LocalPlayer.armor;
-        try
-        {
-            StreamWriter streamWriter = new StreamWriter($"{args[0]}.txt");
-            for (int i = 0; i < key.Length; i++)
-            {
-                items += key[i].Name + ", ";
-                streamWriter.WriteLine("" + i + "," + key[i].netID);
-            }
-
-            streamWriter.Close();
-
-        }
-        catch (Exception e)
-        {
-            throw new UsageException($"{e.Message}");
-        }
-        ChatHelper.BroadcastChatMessage(NetworkText.FromKey($"Saved {args[0]}, with items {items}"), Color.Orange);
+        logger.WriteLoadout(args[0]);
         
     }
     

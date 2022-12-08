@@ -8,6 +8,7 @@ using TerrariaExpansionOfEverything.Content.Pets.Projectile;
 
 namespace TerrariaExpansionOfEverything.Content.Pets.Item;
 
+//Stand Child class for Star Platinum
 public class StarPlatinum : Stand
 {
 

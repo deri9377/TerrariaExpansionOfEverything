@@ -8,7 +8,8 @@ namespace TerrariaExpansionOfEverything.UI;
 
 public class AmmoCounter : ModSystem
 {
-
+    //OBSERVER PATTERN PIECE
+//This is the UI class used by the main mod controller to display the players current ammo count to the user interface
     public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers) {
         int resourceBarIndex = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Resource Bars"));
         if (resourceBarIndex != -1) {

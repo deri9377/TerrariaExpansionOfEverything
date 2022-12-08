@@ -10,7 +10,9 @@ using Terraria.Chat;
 using Terraria.Localization;
 using TerrariaExpansionOfEverything.UI;
 
-
+//This is part of a Logger pattern that writes the players loadout to local memory so that it can be loaded later on and
+// restored for the player. It directly opens an IO stream so that hard writing may take place every time a save / load 
+// command is recieved
 namespace TerrariaExpansionOfEverything.Commands
 {
     public class LoadoutLogger : ModSystem

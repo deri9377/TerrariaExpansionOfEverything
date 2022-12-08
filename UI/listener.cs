@@ -8,6 +8,8 @@ using System;
 using Terraria.Chat;
 using Terraria.Localization;
 
+//This listener class is part of the observer pattern and functions as the publisher for sending NPC positional data
+//to the other NPC finder related classes
 namespace TerrariaExpansionOfEverything.UI
 {
     public class listener : UIElement

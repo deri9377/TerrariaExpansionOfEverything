@@ -6,6 +6,8 @@ using TerrariaExpansionOfEverything.Content.Pets.Projectile;
 
 namespace TerrariaExpansionOfEverything.Content.Pets.Item;
 
+//This is the base class for the stand ability pet slot item
+//these vars hold all of the stats used by each child class
 public abstract class Stand : ModItem
 {
     public override void SetDefaults() {

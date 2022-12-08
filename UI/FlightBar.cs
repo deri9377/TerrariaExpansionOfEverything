@@ -9,6 +9,8 @@ using UIState = Terraria.UI.UIState;
 
 namespace TerrariaExpansionOfEverything.UI
 {
+    //This is another OBSERVER pattern class that captures the remaining flight time for the players wings and uses
+    // it later on in the UI observer children to render a bar to the screen to display said data
     public class FlightBar : UIState
     {
         public static bool visible;

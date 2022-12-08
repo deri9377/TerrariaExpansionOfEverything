@@ -5,7 +5,8 @@ using Terraria.Chat;
 using Terraria.ModLoader;
 
 namespace TerrariaExpansionOfEverything.Commands;
-
+//The commands located in this folder are all part of the command pattern as they are used to execute various functions
+// such as setting the players loadout or getting the currently tracked NPC
 public class CommandHub : ModCommand
 {
     private LoadoutLoader loader;

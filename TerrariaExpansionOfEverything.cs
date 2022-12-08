@@ -11,6 +11,7 @@ using TerrariaExpansionOfEverything.UI;
 
 namespace TerrariaExpansionOfEverything
 {
+    //This is the main mod controller for our project and it holds many different critical functions for this project
     public class SimpleModPlayer : ModPlayer
 	{
         
@@ -25,7 +26,8 @@ namespace TerrariaExpansionOfEverything
 	    }
 	}
     
-
+    //This is the head of the COMMAND pattern as it uses input to form commands and execute them to find the desired
+    //NPC for the player
     public class NPCFinderMod : ModSystem
     {
         private UserInterface NPCfinderInterface;
@@ -76,7 +78,8 @@ namespace TerrariaExpansionOfEverything
             }
         }
     }
-    
+    //Flight timer observer head. This is where the actual rendering takes place for the observer so the player can see
+    // their remaining flight time.
     public class FlightTimer : ModSystem
     {
 

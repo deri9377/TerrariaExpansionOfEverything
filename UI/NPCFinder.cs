@@ -10,7 +10,8 @@ using Terraria.Localization;
 
 namespace TerrariaExpansionOfEverything.UI
 {
-
+//The NPC finder will point the player to the selected NPC so that they can find them easier. This is the core piece of
+//the observer and command patterns as it ties together them both to present the desired data to the UI
 //Guide ID = 22
 
     public class NPCFinder : UIState

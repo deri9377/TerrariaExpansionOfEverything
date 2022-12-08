@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 
 //This is a custom pet item class that allows us to create a Mountable Geodude. 
-//This part of the project is dedicated to our amazing friend and EMT, Brandon "Dio" Brando. He loves geodude. 
+//This part of the project is dedicated to our amazing friend and EMT, Brandon "Amazing at Siege" Brando. He loves geodude. 
 namespace TerrariaExpansionOfEverything.Content.Items;
 
 public class GeodudeItem : ModItem

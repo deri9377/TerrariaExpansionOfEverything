@@ -12,13 +12,15 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
 {
     internal class Vandal : ModItem
     {
+        //Custom weapon item class
+        //This class is for the rifle weapon and all functions below are utilized by only this object
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Vandal");
             Tooltip.SetDefault("The classic");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
-            // Item.staff[Item.type] = true;
         }
+        //Item stats assignments
         public override void SetDefaults(){
             Item.height = 32;
             Item.width = 32;
@@ -32,7 +34,6 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             Item.useTime = 5;
             Item.useStyle = 5;
             Item.useAnimation = 5;
-//            Item.range = true;
 
             Item.noMelee = true;
             Item.damage = 60;
@@ -42,18 +43,15 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             Item.rare = ItemRarityID.Master;
             Item.UseSound = SoundID.Item11;
             Item.useAmmo = AmmoID.Bullet;
-            // Item.shoot = ModContent.ProjectileType<SharpshooterRounds>();
-            // Item.shoot = ProjectileID.FireArrow;
-
-            // Tool Zon
+            // Tool Zone
             Item.shoot = AmmoID.Bullet;
             Item.shootSpeed = 10f;
         }
+        //Custom shoot function to make the bullets appear from the barell of the weapon instead of center of player
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             Vector2 newPos = new Vector2(velocity.X * 1.2f, velocity.Y * 1.2f);
             position += newPos;
-            // velocity = new Vector2(0, 100);
             return true;
         }
         public override void AddRecipes()

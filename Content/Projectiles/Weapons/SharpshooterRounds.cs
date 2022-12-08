@@ -5,6 +5,7 @@ using Terraria.GameContent.Creative;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
+//This is the backend stats and visual UI for the Sharpshooter Bullet once it has been fired from the gun
 namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
  {
     internal class SharpshooterRounds : ModProjectile

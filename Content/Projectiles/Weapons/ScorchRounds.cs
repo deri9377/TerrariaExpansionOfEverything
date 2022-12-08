@@ -5,6 +5,8 @@ using Terraria.GameContent.Creative;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
+//This is the backend class for the Scorch Round once it has been shot. It has a custom function to adds fire damage and the 
+// "on fire!" debuff to enemies that are hit by this bullet.
 namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
  {
     internal class ScorchRounds : ModProjectile

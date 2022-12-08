@@ -5,6 +5,8 @@ using Terraria.GameContent.Creative;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
+//Strategy Pattern Projectile for the "staff of mysteries" weapon
+//See weapon for more detailed comments
 namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
  {
     internal class BigBoulder : ModProjectile
@@ -27,6 +29,7 @@ namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
             Collision.HitTiles(Projectile.position + Projectile.velocity, Projectile.velocity, Projectile.width, Projectile.height);
             
         }
+        //Custom AI class with gravitational abilities and non-active tile collision
         public override void AI()
         {
             Projectile.ai[0]++;

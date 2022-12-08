@@ -12,13 +12,16 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
 {
     internal class Operator : ModItem
     {
+        //Custom weapon item class
+        //This class is for the sniper weapon and all functions below are utilized by only this object
+        
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Operator");
             Tooltip.SetDefault("One shot, one kill.");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
-            // Item.staff[Item.type] = true;
         }
+        //Weapon stats
         public override void SetDefaults(){
             Item.height = 64;
             Item.width = 42;
@@ -41,18 +44,16 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             Item.rare = ItemRarityID.Master;
             Item.UseSound = SoundID.Item149;
             Item.useAmmo = AmmoID.Bullet;
-            // Item.shoot = ProjectileID.FireArrow;
 
             // Tool Zone
             Item.shoot = ModContent.ProjectileType<SharpshooterRounds>();
             Item.shootSpeed = 10f;
         }
+        //Custom Shoot function
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
             Vector2 newPos = new Vector2(velocity.X * 1.6f, velocity.Y * 1.6f);
             position += newPos;
-            // velocity = new Vector2(0, 100);
-            //Sound 149
             float recoil = -1f; // -1f
             player.velocity = 1/4f * velocity * recoil;
             int dustSize = 200;

@@ -10,6 +10,10 @@ using TerrariaExpansionOfEverything.Content.Items.Weapons;
 using TerrariaExpansionOfEverything.Content.Projectiles.Weapons;
 namespace TerrariaExpansionOfEverything.Content;
 
+//This is part of a factory for creating recipes for all of the modded items we have created
+//It works be being called by our ModSystem with a filepath variable for the item.
+//Currently for testing sake, it generates recipes for the Sharpshooter and Scorch type bullet objects so that
+//we can craft them each using 1 dirt block item
 public class AmmoRecipes
 {
     public class AmmoRecipe : ModSystem

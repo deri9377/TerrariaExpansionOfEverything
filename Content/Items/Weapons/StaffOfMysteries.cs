@@ -12,6 +12,8 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
 {
     internal class StaffOfMysteries : ModItem
     {
+        //This mod item is a magic weapon that utilizes the STRATEGY pattern to assign different projectile algorithms 
+        // to the weapon attacks every time it is fired, based on random number generation
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Staff of Mysteries");
@@ -46,6 +48,9 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
             // Tool Zone
             Item.shootSpeed = 10f;
         }
+        //STRATEGY PATTERN PART!!
+        //This randomly assigns one of the modded projectiles I created, each with unique algorithms, every time the player
+        // uses this weapon. See the Content/Projectiles/Weapons filepath for the projectile code themselves. (Big boulder, Spectral bolt)
         public override void OnConsumeMana(Player player, int manaConsumed)
         {
             var randValue = new Random();
@@ -57,35 +62,9 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            // Vector2 newPos = new Vector2(100f, position.Y + 100f);
-            // Projectile.NewProjectile(source, newPos * 20f, velocity, type, damage, knockback);
             return true;
-            // return base.Shoot(player, source, newPos, velocity, type, damage, knockback);
         }
-        // public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-        // {
-        //     int randValue = (Main.rand.Next(5));
-        //     int newType = 0;
-        //     if(randValue == 0){       
-        //         newType = 5;
-        //     }
-        //     if(randValue == 1){
-        //         newType = 19;
-        //     }
-        //     if(randValue == 2){
-        //         newType = 47;
-        //     }
-        //     if(randValue == 3){
-        //         newType = 75;
-        //     }
-        //     else{
-        //         newType = 2;
-        //     }
-        //     Projectile.NewProjectile(source , position, velocity, 1, damage, knockback, player.whoAmI);
-        //     Projectile.NewProjectile(source , position, velocity, 1, damage, knockback, player.whoAmI);
-        //     Projectile.NewProjectile(source , position, velocity, 1, damage, knockback, player.whoAmI);
-        //     return false;
-        // }
+       
         public override void AddRecipes()
         {
             base.AddRecipes();

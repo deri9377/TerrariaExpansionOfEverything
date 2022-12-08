@@ -6,7 +6,8 @@ using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 using System;
 
-
+//Strategy Pattern Projectile for the "staff of mysteries" weapon
+//See weapon for more detailed comments
 namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
  {
     internal class SpectralBolt : ModProjectile
@@ -29,14 +30,14 @@ namespace TerrariaExpansionOfEverything.Content.Projectiles.Weapons
 
             Projectile.extraUpdates = 1;
 
-            // Collision.HitTiles(Projectile.position + Projectile.velocity, -Projectile.velocity, Projectile.width, Projectile.height);
             
         }
         int bounce = 0;
         int maxBounces = 6;
+        //Custom AI function to allow the projectiles to bounce along the surface as they collide with tiles, and also
+        // to create a flaming dust trail
         public override void AI()
         {
-            // Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + 1.57f;
             Projectile.ai[0]++;
             if(Projectile.ai[0] >= 400){
                     Projectile.Kill();

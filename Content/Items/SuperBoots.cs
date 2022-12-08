@@ -5,6 +5,8 @@ using Terraria.GameContent.Creative;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
+//The super boots are an inheritance class of the default armor class
+//that allowed me to create boots that make the player move extremely fast
 namespace TerrariaExpansionOfEverything.Content.Items
 {
     [AutoloadEquip(EquipType.Legs)]

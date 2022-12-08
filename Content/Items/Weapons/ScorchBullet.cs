@@ -12,6 +12,9 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
 {
     internal class ScorchBullet : ModItem
     {
+        //THIS IS A DECORATOR CLASS FOR RANGED WEAPON OBJECTS
+        //This is a custom ITEM class for the ScorchBullet
+        //The scorch bullet is a medium velocity flame round that sets targets on fire
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Scorch Round");

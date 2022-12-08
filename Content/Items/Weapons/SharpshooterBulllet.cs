@@ -12,13 +12,16 @@ namespace TerrariaExpansionOfEverything.Content.Items.Weapons
 {
     internal class SharpshooterBullet : ModItem
     {
+        //THIS IS A DECORATOR CLASS FOR THE RANGED WEAPON OBJECTS
+        //This is a custom ITEM class for the Sharpshooter Bullet
+        //The Sharpshooter bullet is a high velocity, high damage ranged bullet
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sharpshooter Round");
             Tooltip.SetDefault("They never saw it coming.");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
-            // Item.staff[Item.type] = true;
         }
+        //Item stats
         public override void SetDefaults()
         {
 
